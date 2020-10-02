@@ -1,0 +1,84 @@
+﻿@model IEnumerable<onlineLeaveManagement.DAL.Detail>
+
+@{
+    ViewBag.Title = "ViewResult";
+}
+
+
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse:separate;
+}
+th, td {
+  padding: 15px;
+  text-align: center;
+}
+table#t01 {
+  width: 100%;    
+  background-color: #f1f1c1;
+}
+</style>
+
+
+<table id="t01">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.empId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.empName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.empType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dept)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.phone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.password)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.available)
+        </th>
+
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.empId)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.empName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.empType)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.dept)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.email)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.phone)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.password)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.available)
+    </td>
+
+
+</tr>
+}
+
+</table>

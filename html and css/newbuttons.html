@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<style>
+    
+    .link a{
+        align-items: center;
+        text-decoration: none;
+        color:black;
+        font-size: 1.4em;
+        position: relative;
+        padding: 0 10px;
+        transition: 0.25s ease-in-out all;
+        font-weight: 300;
+    }
+    .link a::before{
+        content: '';
+        position: absolute;
+        background: #fec107;
+        width: 2px;
+        height: 100%;
+        left: 0;
+        transition: 0.2s ease-in-out all;
+        z-index: -1;
+    }
+    .link a:hover::before{
+        width: 100%;
+    }
+    .link a:hover{
+        color: #ffffff;
+        font-size: 1.6em;
+    }
+</style>
+<html>
+    <body>
+        <center>
+            <div class="link">
+                <br><br><br>
+                <a href="changeName.html" target="_desc">Change Emp Name</a><br><br><br>
+                
+                <a href="changeType.html" target="_desc">Change Emp Type</a><br><br><br>
+                <a href="changeDept.html" target="_desc">Change Emp dept</a><br><br><br>
+                <a href="changeEmail.html" target="_desc">Change Emp email</a><br><br><br>
+                <a href="changePhone.html" target="_desc">Change Emp phone</a><br><br><br>
+                <a href="changePassword.html" target="_desc">Change Emp password</a><br><br><br>
+
+            </div>
+        </center>
+    </body>
+
+</html>

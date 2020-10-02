@@ -1,0 +1,136 @@
+﻿@model IEnumerable<onlineLeaveManagement.DAL.leaves1>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: separate;
+    }
+
+    th, td {
+        padding: 15px;
+        text-align: center;
+    }
+
+    table#t01 {
+        width: 100%;
+        background-color: #f1f1c1;
+    }
+
+
+    .link a {
+        align-items: center;
+        text-decoration: none;
+        color: black;
+        font-size: 1.4em;
+        position: relative;
+        padding: 0 10px;
+        transition: 0.25s ease-in-out all;
+        font-weight: 300;
+    }
+
+        .link a::before {
+            content: '';
+            position: absolute;
+            background: #fec107;
+            width: 2px;
+            height: 100%;
+            left: 0;
+            transition: 0.2s ease-in-out all;
+            z-index: -1;
+        }
+
+        .link a:hover::before {
+            width: 100%;
+        }
+
+        .link a:hover {
+            color: #ffffff;
+            font-size: 1.6em;
+        }
+</style>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ViewStatus</title>
+</head>
+
+<body>
+
+    <table id="t01">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.empId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.empName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.empType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dept)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.reason)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.leaves)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.from)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.to)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.status)
+            </th>
+            
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                @if (item.empId == (int)ViewData["id"])
+                {
+                    <td>
+                        @Html.DisplayFor(modelItem => item.empId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.empName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.empType)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.dept)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.reason)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.leaves)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.from)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.to)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.status)
+                    </td>
+
+
+                }
+            </tr>
+        }
+
+    </table>
+</body>
+</html>

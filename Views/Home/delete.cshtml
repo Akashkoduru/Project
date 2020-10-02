@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "delete";
+}
+
+@{ 
+    if (ViewData["delete"] == "false")
+    {
+        <h2>user doesn't exist</h2>
+    }
+    else
+    {
+        <h2>deleted successfully</h2>
+    }
+}
+

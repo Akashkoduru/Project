@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "updateName";
+}
+
+@{
+    if (ViewData["Name"] == "true")
+    {
+        <h2>Name updated successfully!</h2>
+    }
+    else
+    {
+        <h2>Employee doesn't exists</h2>
+        <br />
+        <h2>Enter correct details</h2>
+    }
+}
+

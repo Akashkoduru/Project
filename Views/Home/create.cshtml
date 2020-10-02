@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "create";
+}
+@{ 
+    if(ViewData["create"]=="true")
+    {
+        <h2>Successfully created</h2>
+    }
+    else
+    {
+        <h2>User already exists</h2>
+    }
+}
+

@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "checkfac";
+}
+
+@{
+    if (ViewData["checked"].Equals("true"))
+    {
+
+        <iframe src="~/html and css/facultyoptions.html" scrolling="no" width="19%" height="698"></iframe>
+        <iframe src="~/html and css/desc.html" scrolling="no" width="80%" height="698" name="_desc"></iframe>
+
+    }
+    else
+    {
+        <h1>please enter correct details</h1>
+    }
+
+}
+

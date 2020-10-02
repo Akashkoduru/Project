@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="leaveModelStoreContainer" CdmEntityContainer="projectEntities7">
+    <EntitySetMapping Name="admins">
+      <EntityTypeMapping TypeName="leaveModel.admin">
+        <MappingFragment StoreEntitySet="admin">
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="email" ColumnName="email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Details">
+      <EntityTypeMapping TypeName="leaveModel.Detail">
+        <MappingFragment StoreEntitySet="Details">
+          <ScalarProperty Name="empId" ColumnName="empId" />
+          <ScalarProperty Name="empName" ColumnName="empName" />
+          <ScalarProperty Name="empType" ColumnName="empType" />
+          <ScalarProperty Name="dept" ColumnName="dept" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="available" ColumnName="available" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="leaves1">
+      <EntityTypeMapping TypeName="leaveModel.leaves1">
+        <MappingFragment StoreEntitySet="leaves1">
+          <ScalarProperty Name="empId" ColumnName="empId" />
+          <ScalarProperty Name="empName" ColumnName="empName" />
+          <ScalarProperty Name="empType" ColumnName="empType" />
+          <ScalarProperty Name="dept" ColumnName="dept" />
+          <ScalarProperty Name="reason" ColumnName="reason" />
+          <ScalarProperty Name="leaves" ColumnName="leaves" />
+          <ScalarProperty Name="from" ColumnName="from" />
+          <ScalarProperty Name="to" ColumnName="to" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
